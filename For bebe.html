@@ -1,0 +1,124 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blue Dreams 💙</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #020817, #061b40, #00152e);
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 45px;
+    color: #9bd8ff;
+    text-shadow: 0 0 15px #168cff, 0 0 35px #168cff;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 17px;
+    color: #c6e7ff;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 14px 35px;
+    border: 1px solid #64c5ff;
+    border-radius: 30px;
+    background: #0754a0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #168cff;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #168cff;
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #168cff;
+}
+
+/* Floating hearts */
+.heart {
+    position: absolute;
+    bottom: -50px;
+    color: #69c5ff;
+    pointer-events: none;
+    animation: floatUp linear forwards;
+    z-index: 1;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-110vh) rotate(35deg);
+        opacity: 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Happy Monthsary bebe</h1>
+    <p>Happy 4th Monthsary po</p>
+
+    <button onclick="window.location.href='page22.html'">
+        Enter Here ♡
+    </button>
+</div>
+
+<script>
+function createHeart() {
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+    heart.innerHTML = "💙";
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (12 + Math.random() * 18) + "px";
+    heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 10000);
+}
+
+setInterval(createHeart, 350);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Love 💙</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #061329;
+    color: #eaf1ff;
+    font-family: Georgia, serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* STAR BACKGROUND */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:
+      radial-gradient(white 1px, transparent 1px),
+      radial-gradient(#7ca9e8 1px, transparent 1px);
+    background-size: 65px 65px, 100px 100px;
+    opacity: .3;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* MAIN CONTENT */
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: auto;
+    padding: 45px 0;
+    text-align: center;
+}
+
+.top-text {
+    letter-spacing: 5px;
+    color: #9bbce9;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: clamp(35px, 7vw, 60px);
+    color: #e7d6b8;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.intro {
+    color: #a9bddc;
+    font-style: italic;
+    margin-bottom: 35px;
+}
+
+/* SIX PICTURE FRAMES */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 30px 0 40px;
+}
+
+.photo-frame {
+    background: #122849;
+    border: 2px solid #45628c;
+    border-radius: 13px;
+    padding: 8px;
+    box-shadow: 0 5px 20px #0005;
+    transition: .3s;
+}
+
+.photo-frame:hover {
+    transform: translateY(-5px);
+    border-color: #b2c9eb;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 7px;
+    display: block;
+}
+
+.photo-caption {
+    color: #c6d7ef;
+    font-style: italic;
+    font-size: 13px;
+    padding: 10px 0 3px;
+}
+
+/* LOVE LETTER */
+.letter-section {
+    margin: 40px auto;
+}
+
+.letter-title {
+    font-size: 28px;
+    color: #e7d6b8;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+/* SCROLLABLE LETTER */
+.letter {
+    background: linear-gradient(145deg, #142b4d, #0c1d38);
+    border: 1px solid #526d96;
+    border-radius: 18px;
+    padding: 30px;
+    height: 350px;
+    overflow-y: auto;
+    text-align: left;
+    line-height: 2;
+    box-shadow: 0 10px 35px #0006;
+    scroll-behavior: smooth;
+}
+
+/* SCROLLBAR */
+.letter::-webkit-scrollbar {
+    width: 7px;
+}
+
+.letter::-webkit-scrollbar-track {
+    background: #0b1930;
+    border-radius: 10px;
+}
+
+.letter::-webkit-scrollbar-thumb {
+    background: #6688b7;
+    border-radius: 10px;
+}
+
+.letter h2 {
+    color: #e7d6b8;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.letter p {
+    color: #d7e3f5;
+    margin-bottom: 20px;
+}
+
+.signature {
+    color: #e7d6b8;
+    font-style: italic;
+    margin-top: 25px;
+}
+
+/* SECRET MESSAGE BUTTON */
+button {
+    margin: 25px 0;
+    padding: 14px 28px;
+    background: #1c3b67;
+    color: white;
+    border: 1px solid #88a8d5;
+    border-radius: 30px;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: #315582;
+    transform: scale(1.05);
+}
+
+.secret {
+    display: none;
+    color: #e7d6b8;
+    font-style: italic;
+    line-height: 1.8;
+    padding: 20px;
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+footer {
+    color: #7897c0;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-top: 35px;
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width: 550px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-frame img {
+        height: 250px;
+    }
+
+    .letter {
+        padding: 22px;
+        height: 350px;
+    }
+}
+</style>
+</head>
+
+<body>
+<audio src="Panata - Tothapi.mp4" loop autoplay></audio>
+<div class="container">
+
+    <div class="top-text">
+        ✦ HAPPY 4th MONTHSARY BABB ✦
+    </div>
+
+    <h1>As the months goes by, i hope your love for me won't change</h1>
+
+    <p class="intro">
+        Babb, please look and i hope you feel it ♡
+    </p>
+
+    <!-- PHOTO GALLERY: REPLACE THE 6 IMAGE FILES -->
+
+    <div class="gallery">
+
+        <div class="photo-frame">
+            <img src="IMG_2731.jpg" alt="Our memory 1">
+            <div class="photo-caption">First lunch as a couple ♡</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="IMG_2990 2.JPG" alt="Our memory 2">
+            <div class="photo-caption">Watching Spider-man Brand New Day ♡</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="IMG_3757 3.JPG" alt="Our memory 3">
+            <div class="photo-caption"> Our most expensive lunch♡</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="IMG_4025.JPG" alt="Our memory 4">
+            <div class="photo-caption">Our first photobooth ♡</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="IMG_5784.JPG" alt="Our memory 5">
+            <div class="photo-caption">Our 3rd monthsary ♡</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="5F63302B-847B-431F-9FEA-611C3072FBF0.JPG" alt="Our memory 6">
+            <div class="photo-caption">Your first flower given by me ♡</div>
+        </div>
+
+    </div>
+
+    <!-- LOVE LETTER -->
+
+    <div class="letter-section">
+
+        <h2 class="letter-title">
+           Sana maraming memories pa tayong mabuo
+        </h2>
+
+        <div class="letter">
+
+            <h2>Mahal ko? ♡</h2>
+            <p>Can you be honest with me? am I treating you right? Nag e-enjoy ka pa rin ba sa akin? sa atin?
+                Minamahal ba kita ng tama? Tama ba ako mag mahal? Natutunan ko na bang mahalin ka kung paano mo gusto mahalin?  Babb, please, kung hindi
+                mag sabi ka lang please.
+            </p>
+
+            <p>
+               Babb, please, can i ask you a huge favor?
+               wag ikaw bumitaw, sa akin, sa atin, please?
+               Kapag napapagod, mag sabi, please? para magkaroon naman
+               ako ng pagkakataon mag bago para indi ka mapagod.
+            </p>
+
+            <p>
+                Kung alam mo lang bab kung paano ako matakot pag iniisip ko na nasasaktan kita.
+                Maraming beses kong tinatanong yung sarili ko, bakit kaya siya nag kakaganyan?
+                Siguro nawawalan na siya ng nararamdaman sa akin. Yun, yun lagi ang iniisip ko.
+                Bab, sa tuwing nag-aaway tayo, kung hindi po halata na sobrang sakit po para sa akin,
+                sa bawat away natin, naiiyak ako lagi, kasi unti unti kong nakikitang nag lalaho yung mga plano kong
+                nakalaan sa bawat araw na nag aaway tayo.
+
+            </p>
+
+            <p>
+                Alam ko naman po na walang araw na laging masaya, wala pong ganon, may sisingit at sisingit pa rin
+                lagi na prolema, but babb, ayoko na ng pag nagpaplano ako, ang unang iniisip ko, baka mag away kami sa araw na iyon.
+                Bebe natatakot akong baka bumitaw ka sa araw na marami akong hinanda para sa'yo. Wag mo akong iwan, please? Please po, Wag.
+                Sure marami akong pagkakamali sa'yo, but please, wag po.
+            </p>
+
+            <p>
+                Babb, i miss the time na takot na takot ka pang masaktan ako, yung na h-handle mo pa yung ugali ko, yung time na ayaw mong hayaan maiwan ako,
+                yung mga oras na masaya lang. Am i too much na babb for you? Am i too boring na? I'm very grateful babb that your here, with me, but ayaw kong maramdaman natin na wala na tayong paki sa isa't isa dahil
+                lang sa gaan ng panahon sa ating dalawa.
+
+            </p>
+
+            <p>
+                Wag mo ako sukuan, please? Nakikita mo ba po yung mga picture sa taas? Kaya pa nating gumawa ng maraming memories na kayang lampasan yan babb, 
+                wag ka lang bumitaw, please, kayang kaya ko ibigay yung mga kailangan mo, mag sabi ka lang.
+            </p>
+
+            <p>
+               Ayaw kong nasasaktan ka and sana ganon ka rin sa akin, kasi kung isa sa atin, kayang hayaan yung isa, talagang mahihirapan tayo dalawa.
+               Ayokong mahirapan tayo dalawa, walang madali na relasyon, i get it, but let's make it easier po, please?
+               Pangako bebe, mamahalin kita habang buhay, hindi ka na mag iisa, nandito na po ako ngayon, lagi po tandaan ha.
+               Sa mga ups and downs natin dalawa, hinding hindi ako mawawala, pangako.
+            </p>
+
+            <p>
+               Babb, maraming maraming salamat sa mga oras na indi mo ako iniwan, sa mga oras na pinagbigyan mo ako sa mga gusto ko, sa mga oras na indi ka sumuko
+               kahit sakal na sakal ka na sa ugali ko. Wag po susuko ha, mahal na mahal ko ikaw at gusto kong abangan mo pa yung pagmamahal ko na alam kong hihigit pa sa pagmamahal ko sa iyo ngayon.
+               I love you mahal ko.
+            </p>
+
+           
+        </div>
+
+        <p style="color:#91acd1; font-size:12px; margin-top:12px;">
+            ↕ Scroll inside the letter to read everything ↕
+        </p>
+
+    </div>
+
+    <!-- SECRET MESSAGE -->
+
+    <button onclick="showSecret()">
+        For you ♡
+    </button>
+
+    <div class="secret" id="secretMessage">
+        Mahal na mahal kita mahal ko. Ikaw ang ilaw sa daang madilim, kaya't pag wala ka, paningin ko'y dumidilim.
+    </div>
+
+    <footer>
+        FOREVER & ALWAYS ♡
+    </footer>
+
+</div>
+
+<script>
+function showSecret() {
+    const message = document.getElementById("secretMessage");
+
+    if (message.style.display === "block") {
+        message.style.display = "none";
+    } else {
+        message.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
